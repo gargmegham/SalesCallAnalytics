@@ -1,71 +1,85 @@
-# Getting Started with Create React App
+# Sales call analytics dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+=====================
 
-## Available Scripts
+This README provides instructions and information for setting up and running the React frontend application for sales call analytics. The application interacts with AWS S3 for file storage and a backend API for data retrieval and processing.
 
-In the project directory, you can run:
+## Prerequisites
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Before running the React frontend, ensure you have the following prerequisites installed:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Node.js and npm: Make sure you have Node.js and npm installed on your machine. You can download and install them from the [official Node.js website](https://nodejs.org/).
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+Follow these steps to set up and run the React frontend:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1.  **Clone the Repository:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    Clone the repository containing the React frontend code to your local machine.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    `git clone <repository-url>`
 
-### `npm run eject`
+2.  **Install Dependencies:**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    Navigate to the project directory and install the required dependencies using npm.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    `cd <project-directory> npm install`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3.  **Configuration:**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    Set up the necessary environment variables for the application. Create a `.env` file in the root directory of the project and add the following environment variables:
 
-## Learn More
+    `REACT_APP_AWS_ACCESS_KEY=<Your AWS Access Key> REACT_APP_AWS_SECRET_KEY=<Your AWS Secret Key> REACT_APP_AWS_REGION=<Your AWS Region> REACT_APP_AWS_S3_BUCKET=<Your AWS S3 Bucket Name> REACT_APP_API_BASE=http://localhost:8000/`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    Replace `<Your AWS Access Key>`, `<Your AWS Secret Key>`, `<Your AWS Region>`, and `<Your AWS S3 Bucket Name>` with your actual AWS credentials and S3 bucket information.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4.  **Run the Application:**
 
-### Code Splitting
+    Once the dependencies are installed and the environment variables are configured, you can start the React development server.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    `npm start`
 
-### Analyzing the Bundle Size
+    This command will start the development server and open the application in your default web browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+5.  **Accessing the Application:**
 
-### Making a Progressive Web App
+    You can access the React frontend application by visiting `http://localhost:3000` in your web browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Additional Information
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- **API Configuration:** The frontend expects the backend API to be running at `http://localhost:8000/`. Make sure the backend server is up and running before using the frontend application.
+- **AWS S3 Integration:** The application interacts with AWS S3 for file storage. Ensure that your AWS credentials have appropriate permissions to access the specified S3 bucket.
+- **Development Mode:** The application runs in development mode by default. For production deployment, you may need to configure additional settings and build the application accordingly.
 
-### Deployment
+## Troubleshooting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+If you encounter any issues during setup or while running the application, please refer to the documentation provided by React and the libraries used in the project. Additionally, check your environment variables and ensure they are correctly set up.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# SalesCallAnalytics
+If you have any questions or need further assistance, please don't hesitate to reach out to the project maintainers.
+
+## Contribution Guidelines
+
+Contributions to the repository are welcome. If you find any issues or would like to add new features, please follow these guidelines:
+
+- Fork the repository and create a new branch for your feature or bug fix.
+- Ensure that your code follows PEP 8 style guidelines.
+- Submit a pull request with a clear description of the changes you have made.
+
+[Contribution Guidelines](CONTRIBUTING.md).
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Contact
+
+For any questions or inquiries, please contact [meghamgarg@gmail.com](mailto:meghamgarg@gmail.com).
