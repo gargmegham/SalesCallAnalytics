@@ -36,7 +36,13 @@ Follow these steps to set up and run the React frontend:
 
     Set up the necessary environment variables for the application. Create a `.env` file in the root directory of the project and add the following environment variables:
 
-    `REACT_APP_AWS_ACCESS_KEY=<Your AWS Access Key> REACT_APP_AWS_SECRET_KEY=<Your AWS Secret Key> REACT_APP_AWS_REGION=<Your AWS Region> REACT_APP_AWS_S3_BUCKET=<Your AWS S3 Bucket Name> REACT_APP_API_BASE=http://localhost:8000/`
+    ```
+    REACT_APP_AWS_ACCESS_KEY=<Your AWS Access Key>
+    REACT_APP_AWS_SECRET_KEY=<Your AWS Secret Key>
+    REACT_APP_AWS_REGION=<Your AWS Region>
+    REACT_APP_AWS_S3_BUCKET=<Your AWS S3 Bucket Name>
+    REACT_APP_API_BASE=http://localhost:8000/
+    ```
 
     Replace `<Your AWS Access Key>`, `<Your AWS Secret Key>`, `<Your AWS Region>`, and `<Your AWS S3 Bucket Name>` with your actual AWS credentials and S3 bucket information.
 
