@@ -4,6 +4,8 @@
 
 This README provides instructions and information for setting up and running the React frontend application for sales call analytics. The application interacts with AWS S3 for file storage and a backend API for data retrieval and processing.
 
+![Home Image](docs/upload.png)
+
 ## Prerequisites
 
 ---
